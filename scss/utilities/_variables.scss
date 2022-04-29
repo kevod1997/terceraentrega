@@ -1,0 +1,7 @@
+$color-back: linear-gradient(to left, rgb(58, 52, 52), whitesmoke);
+
+@mixin size ($width, $height){
+    width: $width;
+    height: $height;
+}
+

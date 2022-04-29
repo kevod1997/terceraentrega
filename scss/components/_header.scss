@@ -1,0 +1,48 @@
+@import "../utilities/variables";
+
+//header
+
+/* logo */
+
+header{
+    div{
+        display: flex;
+        justify-content: center;
+        background-image: $color-back;
+        height: 120px;
+        a{
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+/* menu */
+
+nav{
+    background-image: $color-back;
+    text-align: center;
+    border-top: 1px solid black;
+    ul{
+        li{
+            display: inline-block;
+            margin: 0.8rem;
+            &:hover{
+                background-color: grey;
+                transform: scale(1.1);
+                box-shadow: 2px 2px black;
+                transition: 1s;
+            }
+            a{
+                list-style: none;
+                text-decoration: none;
+                margin: 0.5rem;
+                font-weight: bold;
+                color: black;
+            }
+        }
+    }
+}
+
+
