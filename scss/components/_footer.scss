@@ -1,6 +1,7 @@
 @import "../utilities/variables";
 
 /*footer*/
+
 footer{
     div{
         background-color: black;
@@ -14,8 +15,7 @@ footer{
             grid-area: sectionFooter1;
             margin-top: 30px;
             img{
-                height: 50%;
-                width: 53%;
+                @include size(53%,50%);
                 margin-left: 20%;
             }
             p{
@@ -26,26 +26,7 @@ footer{
             }
         }
         .sectionFooter2{
-            display: none;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            grid-area: sectionFooter2;
-            .linksFooter{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                .linkTwitter{
-                    @include size(10%,10%);
-                 }
-                 .linkInstagram{
-                    @include size(10%,10%);
-                  }
-                  .linkLinkedin{
-                    @include size(10%,10%);
-                  }
-            }
-           
-
+            display: none;  
         }
        .sectionFooter3{
            grid-area: sectionFooter3;
@@ -87,24 +68,23 @@ footer{
             }
             .sectionFooter2{
                 display: block;
-                margin-top: 30px;
-                margin-bottom: 30px;
                 grid-area: sectionFooter2;
+                margin-left: 75px;
                 .linksFooter{
-                   display: flex;
-                   justify-content: space-evenly;
-                   align-items: center;
-                   .linkTwitter{
-                    @include size(10%,10%);
-                 }
-                 .linkInstagram{
-                    @include size(10%,10%);
-                  }
-                  .linkLinkedin{
-                    @include size(10%,10%);
-                  }
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    .linkTwitter{
+                        @include size(10%,30%);
+                    }
+                    .linkLinkedin{
+                        @include size(10%,30%);
+                    }
+                    .linkInstagram{
+                        @include size(10%,30%);
+                    }
                 }
-           }
+            }
            .sectionFooter3{
             grid-area: sectionFooter3;
             display: flex;

@@ -1,0 +1,36 @@
+@import "utilities/variables";
+/* seccion publicaciones */
+.mainBack{
+    @extend %mainBack;
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "publicacion1"
+                            "publicacion2";
+        .publicacion1{
+            grid-area: publicacion1;
+            height: 50vh;
+             margin-top: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+             border: 1px solid black;
+            display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        .publicacion2{
+            grid-area: publicacion2;
+            height: 50vh;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+    }
+}

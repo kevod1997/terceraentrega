@@ -1,3 +1,9 @@
+.mainHome, .mainQuienes, .mainBack, .mainSitios, main {
+  background-image: url(../img/columnas.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
 /*footer*/
 footer div {
   background-color: black;
@@ -10,8 +16,8 @@ footer div {
     grid-area: sectionFooter1;
     margin-top: 30px; }
     footer div .sectionFooter1 img {
-      height: 50%;
       width: 53%;
+      height: 50%;
       margin-left: 20%; }
     footer div .sectionFooter1 p {
       width: 53%;
@@ -19,23 +25,7 @@ footer div {
       margin-left: 20%;
       color: white; }
   footer div .sectionFooter2 {
-    display: none;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    grid-area: sectionFooter2; }
-    footer div .sectionFooter2 .linksFooter {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center; }
-      footer div .sectionFooter2 .linksFooter .linkTwitter {
-        width: 10%;
-        height: 10%; }
-      footer div .sectionFooter2 .linksFooter .linkInstagram {
-        width: 10%;
-        height: 10%; }
-      footer div .sectionFooter2 .linksFooter .linkLinkedin {
-        width: 10%;
-        height: 10%; }
+    display: none; }
   footer div .sectionFooter3 {
     grid-area: sectionFooter3;
     display: grid;
@@ -69,22 +59,21 @@ footer div {
         color: white; }
     footer div .sectionFooter2 {
       display: block;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      grid-area: sectionFooter2; }
+      grid-area: sectionFooter2;
+      margin-left: 75px; }
       footer div .sectionFooter2 .linksFooter {
         display: flex;
         justify-content: space-evenly;
         align-items: center; }
         footer div .sectionFooter2 .linksFooter .linkTwitter {
           width: 10%;
-          height: 10%; }
-        footer div .sectionFooter2 .linksFooter .linkInstagram {
-          width: 10%;
-          height: 10%; }
+          height: 30%; }
         footer div .sectionFooter2 .linksFooter .linkLinkedin {
           width: 10%;
-          height: 10%; }
+          height: 30%; }
+        footer div .sectionFooter2 .linksFooter .linkInstagram {
+          width: 10%;
+          height: 30%; }
     footer div .sectionFooter3 {
       grid-area: sectionFooter3;
       display: flex;
@@ -94,69 +83,111 @@ footer div {
       footer div .sectionFooter3 p {
         color: white; } }
 
-/* logo */
-header div {
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(to left, #3a3434, whitesmoke);
-  height: 120px; }
-  header div a img {
-    height: 100%; }
+.mainHome, .mainQuienes, .mainBack, .mainSitios, main {
+  background-image: url(../img/columnas.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
 
-/* menu */
-nav {
-  background-image: linear-gradient(to left, #3a3434, whitesmoke);
-  text-align: center;
-  border-top: 1px solid black; }
-  nav ul li {
-    display: inline-block;
-    margin: 0.8rem; }
-    nav ul li:hover {
-      background-color: grey;
-      transform: scale(1.1);
-      box-shadow: 2px 2px black;
-      transition: 1s; }
-    nav ul li a {
-      list-style: none;
-      text-decoration: none;
-      margin: 0.5rem;
-      font-weight: bold;
-      color: black; }
+/* logo */
+header {
+  /* menu */ }
+  header div {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, #3a3434, whitesmoke);
+    height: 120px; }
+    header div a img {
+      height: 100%; }
+  header nav {
+    background-image: linear-gradient(to left, #3a3434, whitesmoke);
+    text-align: center;
+    border-top: 1px solid black; }
+    header nav ul li {
+      display: inline-block;
+      margin: 0.33rem; }
+      header nav ul li:hover {
+        background-color: grey;
+        transform: scale(1.1);
+        box-shadow: 2px 2px black;
+        transition: 1s; }
+      header nav ul li a {
+        list-style: none;
+        text-decoration: none;
+        font-weight: bold;
+        color: black; }
+
+@media only screen and (min-width: 1024px) {
+  header div {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, #3a3434, whitesmoke);
+    height: 120px; }
+    header div a img {
+      height: 100%; }
+  /* menu */
+  nav {
+    background-image: linear-gradient(to left, #3a3434, whitesmoke);
+    text-align: center;
+    border-top: 1px solid black;
+    padding: 10px; }
+    nav ul li {
+      display: inline-block;
+      margin: 1rem; }
+      nav ul li:hover {
+        background-color: grey;
+        transform: scale(1.1);
+        box-shadow: 2px 2px black;
+        transition: 1s; }
+      nav ul li a {
+        list-style: none;
+        text-decoration: none;
+        margin: 1rem;
+        font-weight: bold;
+        color: black; } }
+
+.mainHome, .mainQuienes, .mainBack, .mainSitios, main {
+  background-image: url(../img/columnas.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+.mainHome, .mainQuienes, .mainBack, .mainSitios, main {
+  background-image: url(../img/columnas.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
 
 /* home*/
 /*mobile*/
-.mainHome {
-  background-image: url(../img/columnas.jpg);
-  background-size: cover;
-  background-position: center; }
-  .mainHome div {
-    height: 100vh;
-    margin-left: 70px;
-    margin-right: 90px;
-    display: grid;
-    grid-template-columns: 1fr 0fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "section1 section3" "section2 section3"; }
-    .mainHome div .section1 {
-      grid-area: section1;
-      margin: 1.25rem;
-      margin-top: 3.125rem;
-      margin-bottom: 0px;
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .mainHome div .section2 {
-      grid-area: section2;
-      margin-top: 0px;
-      margin: 1.25rem;
-      margin-bottom: 3.125rem;
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .mainHome div .section3 {
-      display: none; }
+.mainHome div {
+  height: 100vh;
+  margin-left: 70px;
+  margin-right: 90px;
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "section1 section3" "section2 section3"; }
+  .mainHome div .section1 {
+    grid-area: section1;
+    margin: 1.25rem;
+    margin-top: 3.125rem;
+    margin-bottom: 0px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .mainHome div .section2 {
+    grid-area: section2;
+    margin-top: 0px;
+    margin: 1.25rem;
+    margin-bottom: 3.125rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .mainHome div .section3 {
+    display: none; }
 
 /*desktop*/
 @media only screen and (min-width: 1024px) {
@@ -188,3 +219,226 @@ nav {
 
 body {
   font-family: 'Roboto', sans-serif; }
+
+.mainHome, .mainQuienes, .mainBack, .mainSitios, main {
+  background-image: url(../img/columnas.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+/* seccion quienes somos */
+.mainQuienes .sectionTitulo {
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: whitesmoke; }
+
+.mainQuienes .sectionParrafo {
+  color: black;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 25px;
+  background-image: linear-gradient(to left, #3a3434, whitesmoke); }
+
+@media only screen and (min-width: 1024px) {
+  .mainQuienes {
+    height: 70vh; }
+    .mainQuienes .sectionTitulo {
+      margin-left: 100px;
+      display: flex;
+      text-align: flex-start;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .mainQuienes .sectionParrafo {
+      font-size: 18px;
+      margin-top: 25px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 25px; } }
+
+.mainHome, .mainQuienes, .mainBack, .mainSitios, main {
+  background-image: url(../img/columnas.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+/* seccion publicaciones */
+.mainBack .container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "publicacion1" "publicacion2"; }
+  .mainBack .container .publicacion1 {
+    grid-area: publicacion1;
+    height: 50vh;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .mainBack .container .publicacion2 {
+    grid-area: publicacion2;
+    height: 50vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.mainHome, .mainQuienes, .mainBack, .mainSitios, main {
+  background-image: url(../img/columnas.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+/* seccion sitios */
+.mainSitios .sitiosMainTitulo {
+  padding: 25px 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  font-weight: bold; }
+
+.mainSitios .sitiosMainLinks ul {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "senado saij " "corte infoleg" "diputados consejo";
+  margin-left: 100px;
+  margin-right: 100px; }
+  .mainSitios .sitiosMainLinks ul .senado {
+    grid-area: senado;
+    list-style: none;
+    width: 100%;
+    height: 80%; }
+  .mainSitios .sitiosMainLinks ul .saij {
+    grid-area: saij;
+    list-style: none;
+    width: 100%;
+    height: 80%; }
+  .mainSitios .sitiosMainLinks ul .infoleg {
+    grid-area: infoleg;
+    list-style: none;
+    width: 100%;
+    height: 75%;
+    margin-left: 5px; }
+  .mainSitios .sitiosMainLinks ul .corte {
+    grid-area: corte;
+    list-style: none;
+    width: 100%;
+    height: 75%;
+    margin-right: 5px; }
+  .mainSitios .sitiosMainLinks ul .diputados {
+    grid-area: diputados;
+    list-style: none;
+    height: 80%;
+    width: 100%;
+    margin-right: 5px; }
+  .mainSitios .sitiosMainLinks ul .consejo {
+    grid-area: consejo;
+    list-style: none;
+    height: 80%;
+    width: 100%;
+    margin-left: 5px; }
+
+@media only screen and (min-width: 1024px) {
+  .mainSitios .sitiosMainTitulo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 1px solid black; }
+  .mainSitios .sitiosMainLinks li {
+    display: flex;
+    flex-direction: row; }
+    .mainSitios .sitiosMainLinks li ul {
+      height: 70vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "senado saij infoleg" "corte diputados consejo";
+      margin-left: 100px;
+      margin-right: 100px; }
+      .mainSitios .sitiosMainLinks li ul .senado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+      .mainSitios .sitiosMainLinks li ul .saij {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+      .mainSitios .sitiosMainLinks li ul .infoleg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+      .mainSitios .sitiosMainLinks li ul .corte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+      .mainSitios .sitiosMainLinks li ul .diputados {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+      .mainSitios .sitiosMainLinks li ul .consejo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; } }
+
+.mainHome, .mainQuienes, .mainBack, .mainSitios, main {
+  background-image: url(../img/columnas.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+/* seccion contacto*/
+main .mainContactoTitulo {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px; }
+
+main form {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  background-color: #8e8383;
+  font-weight: bold;
+  text-align: center; }
+  main form fieldset .formTituloContacto {
+    font-weight: bold;
+    margin: 10px;
+    text-align: center; }
+    main form fieldset .formTituloContacto .nombre {
+      margin: 5px; }
+    main form fieldset .formTituloContacto .apellido {
+      margin: 5px; }
+    main form fieldset .formTituloContacto .email {
+      margin: 5px; }
+    main form fieldset .formTituloContacto .provincia {
+      margin: 5px; }
+    main form fieldset .formTituloContacto .genero {
+      margin: 10px; }

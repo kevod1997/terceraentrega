@@ -1,10 +1,10 @@
+@import "utilities/variables";
 /* home*/
 
 /*mobile*/
+
 .mainHome{
-    background-image: url(../img/columnas.jpg);
-    background-size: cover;
-    background-position: center;
+    @extend %mainBack;
     div{
          height: 100vh;
          margin-left: 70px;

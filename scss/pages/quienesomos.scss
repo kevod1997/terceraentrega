@@ -1,0 +1,41 @@
+@import "utilities/variables";
+/* seccion quienes somos */
+.mainQuienes{
+    @extend %mainBack;
+    .sectionTitulo{
+        padding-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: whitesmoke;
+    }
+    .sectionParrafo{
+        color: black;
+        font-size: 18px;
+        margin-top: 25px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 25px;
+        background-image: $color-back;
+    }
+}    
+@media only screen and (min-width:1024px){
+    .mainQuienes{
+        height: 70vh;
+        .sectionTitulo{
+        margin-left: 100px;
+         display: flex;
+         text-align: flex-start;
+         text-transform: uppercase;
+         font-weight: bold;
+        }
+        .sectionParrafo{
+            font-size: 18px;
+            margin-top: 25px;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 25px;
+        }
+    }
+   
+}

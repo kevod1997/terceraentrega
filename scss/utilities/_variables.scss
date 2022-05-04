@@ -4,4 +4,10 @@ $color-back: linear-gradient(to left, rgb(58, 52, 52), whitesmoke);
     width: $width;
     height: $height;
 }
+%mainBack{
+    background-image: url(../img/columnas.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
