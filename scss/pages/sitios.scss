@@ -28,39 +28,41 @@
             grid-area: senado;
             list-style: none;
             width: 100%;
-            height: 80%;
+            height: 60%;
+            margin-right: 5px;
           }
          .saij{
             grid-area: saij;
             list-style: none;
             width: 100%;
-            height: 80%;
+            height: 60%;
+             margin-left: 5px;
           }
          .infoleg{
             grid-area: infoleg;
             list-style: none;
             width: 100%;
-            height: 75%;
+            height: 50%;
             margin-left: 5px;
           }
          .corte{
             grid-area: corte;
             list-style: none;
             width: 100%;
-            height: 75%;
+            height:50%;
             margin-right: 5px;
          }
           .diputados{
             grid-area: diputados;
             list-style: none;
-            height: 80%;
+            height: 60%;
             width: 100%;
             margin-right: 5px;
           }
          .consejo{
             grid-area: consejo;
             list-style: none;
-            height: 80%;
+            height: 60%;
             width: 100%;
             margin-left: 5px;
              }
@@ -70,66 +72,67 @@
 @media only screen and (min-width:1024px){
     .mainSitios{
         .sitiosMainTitulo{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 30px;
-        border-bottom: 1px solid black;
+            padding-top: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 30px;
+            border-bottom: 1px solid black;
         }
         .sitiosMainLinks{
-            li{
+          ul{
+                height: 70vh;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "senado saij infoleg"
+                                 "corte diputados consejo";
+            margin-top: 100px;                     
+            margin-left: 100px;
+            margin-right: 100px;
+             .senado{
                 display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
                 flex-direction: row;
-                ul{
-                    height: 70vh;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    grid-template-rows: 1fr 1fr;
-                    grid-template-areas: "senado saij infoleg"
-                                         "corte diputados consejo";
-                    margin-left: 100px;
-                    margin-right: 100px;
-                    .senado{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                    }
-                    .saij{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                    }
-                    .infoleg{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                    }
-                    .corte{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                    }
-                    .diputados{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                    }
-                    .consejo{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                    }
-
-                }
-            }
-        }
+              }
+             .saij{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                flex-direction: row;
+              }
+             .infoleg{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                flex-direction: row;
+              }
+             .corte{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                flex-direction: row;
+             }
+              .diputados{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                flex-direction: row;
+              }
+             .consejo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                flex-direction: row;
+                 }
+             }
+        }     
     }
 }
